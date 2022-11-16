@@ -1,0 +1,32 @@
+.palmares-content {
+  background-color: #f0f0f0;
+}
+
+.container-palmares-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.palmares-content__trophies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.trophies__first {
+  width: 15%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trophies__first__subtitle {
+  width: 80%;
+  text-align: center;
+}

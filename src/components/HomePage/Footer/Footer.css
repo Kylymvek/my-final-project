@@ -1,0 +1,103 @@
+.footer {
+  /* background: url("https://static.vecteezy.com/system/resources/thumbnails/003/106/558/small/soccer-stadium-night-background-free-vector.jpg"); */
+  background-color: #c2c2c2;
+  padding: 20px;
+}
+
+.container__footer__content {
+  max-width: 1500px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__content__left {
+  width: 45%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__content__left__icons {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer__content__right {
+  width: 45%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer__content__right__icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__content__under {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media all and (max-width: 630px) {
+  .footer__content__right {
+    padding-top: 20px;
+  }
+
+  .footer__content__right h3 {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 630px) {
+  .footer__content__under {
+    padding-top: 40px;
+  }
+}
+
+@media all and (max-width: 610px) {
+  .footer__content__right__icons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 530px) {
+  .footer__content__left h3 {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 410px) {
+  .footer__content__right__icon_style {
+    width: 120px;
+  }
+  .footer__content__under {
+    padding-top: 50px;
+  }
+
+  .footer__content__left h3 {
+    font-size: 16px;
+    margin-top: -14px;
+  }
+
+  .footer__content__right h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}

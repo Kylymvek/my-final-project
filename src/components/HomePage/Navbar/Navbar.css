@@ -1,0 +1,119 @@
+nav {
+  height: 70px;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__left {
+  width: 15.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+.navbar__center {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar__center li {
+  text-align: center;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.navbar__right {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .right_input input {
+  width: 130%;
+  height: 25px;
+  background-color: bisque;
+} */
+
+/* .right_input input::placeholder {
+  text-align: center;
+  font-size: 18px;
+  color: inherit;
+} */
+
+.right__login img {
+  width: 35px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.nav-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-search input {
+  width: 80%;
+  height: 30px;
+  border: 2px solid black;
+}
+
+.nav-search input::placeholder {
+  font-size: 18px;
+  color: inherit;
+}
+
+@media all and (max-width: 900px) {
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar__left {
+    width: 30%;
+  }
+
+  .burgerMenu {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar__center {
+    display: none;
+  }
+  .navbar__right {
+    width: 20%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navbar__left {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .navbar__right {
+    width: 25%;
+  }
+}
+@media all and (max-width: 370px) {
+  .navbar__right {
+    width: 30%;
+  }
+
+  .left__logo-ucl {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "tickets": [
+    {
+      "liga": "sldfjgsj;l",
+      "firstTeamLogo": "jkjddf;ljsfldj",
+      "secondTeamLogo": "kljdf;ljsldj",
+      "firstTeamName": "kljdfsljsl;dkj",
+      "secondTeamName": "jsd",
+      "date": "",
+      "location": "",
+      "price": 0,
+      "description": "",
+      "stadiumPhoto": "",
+      "id": 1
+    },
+    {
+      "liga": "skfdlksdj;jjl",
+      "firstTeamLogo": "fsdjlsfkdj",
+      "secondTeamLogo": "lkjsldfjldfskj",
+      "firstTeamName": "ljlkjsfdlkjfsdl",
+      "secondTeamName": "lkjflsdkjlkfsdjlj",
+      "date": "skdjflkfsjd",
+      "location": "lkjflsdjlkj",
+      "price": 2311,
+      "description": "lkjfsdlj",
+      "stadiumPhoto": "kjflds",
+      "id": 2
+    }
+  ]
+}

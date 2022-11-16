@@ -1,29 +1,42 @@
-import React, { useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
+import { auth } from "../firebase";
+
+export const AuthContext = createContext();
+
+export function useAuth() {
+  return useContext(AuthContext);
+}
 
 const AuthContextProvider = ({ children }) => {
-  const [user, setUser] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [emailError, setEmailError] = useState("");
-  const [passwordError, setPasswordError] = useState("");
-  const [hasAccount, setHasAccount] = useState("");
+  const [currentUser, setCurrentUser] = useState();
+  const [loading, setLoading] = useState(true);
 
-  // очищение ошибок
-  const clearErrors = () => {
-    setEmailError("");
-    setPasswordError("");
+  function signup(email, password) {
+    return auth.createUserWithEmailAndPassword(email, password);
+  }
+
+  function login(email, password) {
+    return auth.signInWithEmailAndPassword(email, password);
+  }
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged(user => {
+      setLoading(false);
+      setCurrentUser(user);
+    });
+    return unsubscribe;
+  }, []);
+
+  const value = {
+    currentUser,
+    signup,
+    login,
   };
-
-  // очищение инпутов
-  const clearInputs = () => {
-    setEmail("");
-    setPassword("");
-  };
-
-  // функция для регистрации
-  const handleSignUp = () => {};
-
-  return <div></div>;
+  return (
+    <AuthContext.Provider value={value}>
+      {!loading && children}
+    </AuthContext.Provider>
+  );
 };
 
 export default AuthContextProvider;
