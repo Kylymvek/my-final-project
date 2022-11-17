@@ -152,8 +152,8 @@ const TicketDetails = () => {
                   backgroundColor: "lightgray",
                   textAlign: "center",
                 }}>
-                <span>{item.user}</span>
-                <span>
+                <span style={{ color: "blue" }}>{item.user}</span>
+                <span style={{ color: "green" }}>
                   {item.coment}
                   <IconButton onClick={() => deleteComent(item.id)}>
                     <DeleteIcon />
@@ -168,7 +168,7 @@ const TicketDetails = () => {
         <form
           onSubmit={e => handleAdd(e)}
           style={{ margin: "100px 200px", width: "100%" }}>
-          <label style={{ fontSize: "18px" }}>
+          <label style={{ fontSize: "18px", color: "white" }}>
             Оставить отзыв:
             <input
               onChange={e => setComent(e.target.value)}
@@ -183,9 +183,7 @@ const TicketDetails = () => {
               }}
             />
           </label>
-          <IconButton type="submit">
-            <SendIcon />
-          </IconButton>
+          <IconButton type="submit">{/* <SendIcon /> */}</IconButton>
         </form>
       </div>
       <Footer />

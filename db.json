@@ -98,18 +98,5 @@
       "id": 9
     }
   ],
-  "comment": [
-    {
-      "coment": "ksdfldkj",
-      "key": "4",
-      "user": "test3@gmail.com",
-      "id": 2
-    },
-    {
-      "coment": "kkjgdldfj",
-      "key": "4",
-      "user": "test3@gmail.com",
-      "id": 3
-    }
-  ]
+  "comment": []
 }
