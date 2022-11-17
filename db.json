@@ -1,30 +1,115 @@
 {
   "tickets": [
     {
-      "liga": "sldfjgsj;l",
-      "firstTeamLogo": "jkjddf;ljsfldj",
-      "secondTeamLogo": "kljdf;ljsldj",
-      "firstTeamName": "kljdfsljsl;dkj",
-      "secondTeamName": "jsd",
-      "date": "",
-      "location": "",
-      "price": 0,
-      "description": "",
-      "stadiumPhoto": "",
-      "id": 1
+      "liga": "LALIGA",
+      "ligaLogo": "https://avatars.mds.yandex.net/i?id=a9496da07ac9d05868111a0ebd34de562541d837-4820816-images-thumbs&n=13",
+      "firstTeamLogo": "https://avatars.mds.yandex.net/i?id=d50fafab0bc5cbf33e18c4b4cdf24ce5df94f29a-6356076-images-thumbs&n=13",
+      "secondTeamLogo": "https://avatars.mds.yandex.net/i?id=25201adc96af495fb829a4326893ca1ef873ba12-5232636-images-thumbs&n=13",
+      "firstTeamName": "Real Madrid",
+      "secondTeamName": "Barcelona",
+      "date": "20.12.2022",
+      "location": "Santiago Bernabeu, Madrid",
+      "price": 400,
+      "description": "Оба гранда подошли к центральному матчу первого круга Ла Лиги с одинаковым количеством набранных очков. Барса опережала Реал по дополнительным показателям. Каталонцы накануне не сумели обыграть миланский Интер и практически упустили шансы на плей-офф ЛЧ. Мадрид тоже провалил свою генеральную репетицию, чудом спасшись против Шахтера. Впрочем, Класико – это совсем другая и стория, где текущая форма команд не имеет никакого значения. Каталонцы, к примеру, выиграли 4 из 5 крайних матчей на Бернабеу.",
+      "stadiumPhoto": "https://thestilton.files.wordpress.com/2019/06/realmadridstadium1.jpg?w=3000",
+      "id": 4
     },
     {
-      "liga": "skfdlksdj;jjl",
-      "firstTeamLogo": "fsdjlsfkdj",
-      "secondTeamLogo": "lkjsldfjldfskj",
-      "firstTeamName": "ljlkjsfdlkjfsdl",
-      "secondTeamName": "lkjflsdkjlkfsdjlj",
-      "date": "skdjflkfsjd",
-      "location": "lkjflsdjlkj",
-      "price": 2311,
-      "description": "lkjfsdlj",
-      "stadiumPhoto": "kjflds",
+      "date": "21.02.2023",
+      "description": "Лига чемпионов. 1/8 финала  рад приветствовать всех любителей футбола! Здесь вас ждет онлайн-трансляция матча Ливерпуль (Ливерпуль) – Реал (Мадрид). Лига чемпионов, 1/8 финала, первый матч. Матч пройдет 21 февраля 2023 года на стадионе Anfield (Ливерпуль, Англия). Начало - в 23:00 по московскому времени.",
+      "firstTeamLogo": "https://avatars.mds.yandex.net/i?id=6dc383995f969ed1a6c7d8257d24d804-3520543-images-thumbs&n=13",
+      "firstTeamName": "Liverpool",
+      "liga": "UEFA CL",
+      "ligaLogo": "https://avatars.mds.yandex.net/i?id=ff7abb6cc67347904285692054297671195a5e5c-5657852-images-thumbs&n=13",
+      "location": "Anfield, London",
+      "price": 500,
+      "secondTeamLogo": "https://avatars.mds.yandex.net/i?id=d50fafab0bc5cbf33e18c4b4cdf24ce5df94f29a-6356076-images-thumbs&n=13",
+      "secondTeamName": "Real Madrid",
+      "stadiumPhoto": "https://pbs.twimg.com/media/Bl7XEc0CcAE2YSM?format=jpg&name=large"
+    },
+    {
+      "liga": "skfdflsdjl",
+      "ligaLogo": "kjlkjfdsljl",
+      "firstTeamLogo": "jlkjsfldkj",
+      "secondTeamLogo": "ljlksfdsjljl",
+      "firstTeamName": "jlfdsjl",
+      "secondTeamName": "jlkjddll",
+      "date": "qlksfdjlkj",
+      "location": "lkjlskfdjlkj",
+      "price": 23,
+      "description": "lkjlkgfjdlkj",
+      "stadiumPhoto": "lkjlgkfjlk",
+      "id": 5
+    },
+    {
+      "liga": "kfdjlkgj",
+      "ligaLogo": "lkjlfkdjlkj",
+      "firstTeamLogo": "lkjgfjdlkj",
+      "secondTeamLogo": "lkjlkfgjlj",
+      "firstTeamName": "lljfdl;k;j",
+      "secondTeamName": "lkkf;dlkj",
+      "date": "gfslkdjlk",
+      "location": "jlkjlkfjdlkj",
+      "price": 3242,
+      "description": "lksjdlkj",
+      "stadiumPhoto": "ljgkjlkj`",
+      "id": 6
+    },
+    {
+      "liga": "fkljdlk",
+      "ligaLogo": ";jlkfjd;jqqlkjdf;lj",
+      "firstTeamLogo": ";jlkjfdl;j;",
+      "secondTeamLogo": "lkjlkgjsfdlkj",
+      "firstTeamName": "lkjlkfjdlsj",
+      "secondTeamName": "ljlfjsdlj",
+      "date": "kjdlfkdjlkjlkqj",
+      "location": "jldfkjlk",
+      "price": 232,
+      "description": "jlkjfdlkjl",
+      "stadiumPhoto": "kjlgfjlk",
+      "id": 7
+    },
+    {
+      "liga": "fdk;sldj",
+      "ligaLogo": ";jf;sdj;l",
+      "firstTeamLogo": "jlkgjfds;lj",
+      "secondTeamLogo": "lkj;glsfkjd;lj",
+      "firstTeamName": ";ljfsdlj;l",
+      "secondTeamName": "j;ljsfdlj",
+      "date": "kljs;djf;lk",
+      "location": "jlskjfdlj",
+      "price": 234,
+      "description": ";lkjfsdlj",
+      "stadiumPhoto": ";lj;lksjd",
+      "id": 8
+    },
+    {
+      "liga": "sfjlj",
+      "ligaLogo": "ljfdljl",
+      "firstTeamLogo": "qjkfd;lk;",
+      "secondTeamLogo": "kjfdlkjhewh",
+      "firstTeamName": "ouhyfdyoi",
+      "secondTeamName": "fdjiuqoq",
+      "date": "ljsfdjlk",
+      "location": "jqlfjdslkj",
+      "price": 2483,
+      "description": "lhfdlkj",
+      "stadiumPhoto": "lkjgelf",
+      "id": 9
+    }
+  ],
+  "comment": [
+    {
+      "coment": "ksdfldkj",
+      "key": "4",
+      "user": "test3@gmail.com",
       "id": 2
+    },
+    {
+      "coment": "kkjgdldfj",
+      "key": "4",
+      "user": "test3@gmail.com",
+      "id": 3
     }
   ]
 }

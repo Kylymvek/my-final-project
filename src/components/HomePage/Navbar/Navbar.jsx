@@ -9,27 +9,29 @@ import MenuIcon from "@mui/icons-material/Menu";
 import "./Navbar.css";
 import { basketContext } from "../../../context/BasketContextProvider";
 import { ticketContext } from "../../../context/TicketContextProvider";
+import { useAuth } from "../../../context/AuthContextProvider";
 
 const Navbar = () => {
   const [showSearch, setShowSearch] = useState(false);
   const navigate = useNavigate();
-  const { readTicket } = useContext(ticketContext);
+  const { readTicket, pageTotalCount } = useContext(ticketContext);
   const { basketCount } = useContext(basketContext);
 
+  const { currentUser } = useAuth();
   const [searchValue, setSearchValue] = useState("");
   const [paramsSearch, setParamsSearch] = useSearchParams();
   const location = useLocation();
-
   useEffect(() => {
     if (location.pathname === "/") {
       setParamsSearch({
-        // price_gte: +paramsSearch.get("price_gte"),
-        // price_lte: +paramsSearch.get("price_lte"),
         q: searchValue,
       });
     }
-    readTicket();
   }, [searchValue]);
+
+  useEffect(() => {
+    readTicket();
+  }, [pageTotalCount, paramsSearch]);
 
   function ShowSearch() {
     if (showSearch) {
@@ -54,11 +56,17 @@ const Navbar = () => {
           </div>
         </div>
         <ul className="navbar__center">
-          <li onClick={() => navigate("/add")}>
-            Добавить
-            <br /> билеты
+          {currentUser.email === "kylymbek@gmail.com" ? (
+            <li onClick={() => navigate("/add")}>
+              Добавить
+              <br /> билеты
+            </li>
+          ) : null}
+          <li
+          // onClick={() => navigate("/list")}
+          >
+            Билеты
           </li>
-          <li onClick={() => navigate("/list")}>Билеты</li>
           <li>RM Shop</li>
           <li>О клубе</li>
           <li>Стадион Бернабеу</li>
@@ -93,7 +101,7 @@ const Navbar = () => {
         <div className="container nav-search">
           <input
             // type="search"
-            // inputProps={{ "aria-label": "search" }}
+            inputProps={{ "aria-label": "search" }}
             placeholder="Поиск"
             value={searchValue}
             onChange={e => setSearchValue(e.target.value)}

@@ -1,6 +1,6 @@
 nav {
   height: 70px;
-  background-color: bisque;
+  background-color: rgb(240, 236, 236);
   display: flex;
   justify-content: space-between;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Filter from "../Filter/Filter";
 import TicketDetails from "../Tickets/TicketDetails/TicketDetails";
 import TicketsList from "../Tickets/TicketsList/TicketsList";
 import Footer from "./Footer/Footer";
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Navbar />
       {/* <TicketDetails /> */}
       <TicketsList />
+      {/* <Filter /> */}
       {/* <PalmaresContent /> */}
       <Footer />
     </>

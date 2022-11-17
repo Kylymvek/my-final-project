@@ -1,6 +1,6 @@
 .container-details {
   max-width: 1200px;
-  margin: 10px auto;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,4 +70,44 @@
   margin: 10px 0;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media all and (max-width: 660px) {
+  .details__middle {
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 660px) {
+  .details__middle {
+    margin-top: 20px;
+  }
+
+  .details__top__right {
+    height: 150px;
+  }
+
+  .details__top__right__dateAndLocation {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .defisBetweenTeams {
+    display: none;
+  }
+  .details__top__right__ligaAndMatch h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 385px) {
+  .defisBetweenTeams {
+    display: block;
+  }
+
+  .detailsLocation {
+    text-align: center;
+  }
 }

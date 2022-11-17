@@ -2,18 +2,21 @@ import React from "react";
 import HomePage from "./components/HomePage/HomePage";
 import AuthContextProvider from "./context/AuthContextProvider";
 import BasketContextProvider from "./context/BasketContextProvider";
+import ComentContextProvider from "./context/CommentContextProvider";
 import TicketContextProvider from "./context/TicketContextProvider";
 import MainRoutes from "./MainRoutes";
 
 const App = () => {
   return (
-    <BasketContextProvider>
+    <ComentContextProvider>
       <TicketContextProvider>
-        <AuthContextProvider>
-          <MainRoutes />
-        </AuthContextProvider>
+        <BasketContextProvider>
+          <AuthContextProvider>
+            <MainRoutes />
+          </AuthContextProvider>
+        </BasketContextProvider>
       </TicketContextProvider>
-    </BasketContextProvider>
+    </ComentContextProvider>
   );
 };
 
