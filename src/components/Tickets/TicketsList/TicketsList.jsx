@@ -33,13 +33,13 @@ const TicketsList = () => {
       setParamsSearch({
         q: paramsSearch.get("q") || "",
         _page: page,
-        _limit: 3,
+        _limit: 4,
       });
     } else {
       setParamsSearch({
         firstTeamName: firstTeamName,
         _page: page,
-        _limit: 3,
+        _limit: 4,
       });
     }
   }, [paramsSearch, setFirstTeamName, page]);
@@ -48,7 +48,7 @@ const TicketsList = () => {
     <>
       <div className="ticket-cards">
         {ticketsArr ? (
-          ticketsArr.map((item) => <TicketCard item={item} key={item.id} />)
+          ticketsArr.map(item => <TicketCard item={item} key={item.id} />)
         ) : (
           <h1 style={{ color: "white" }}>loading...</h1>
         )}
@@ -60,8 +60,7 @@ const TicketsList = () => {
           justifyContent: "center",
         }}
         mx="auto"
-        my="10px"
-      >
+        my="10px">
         <Pagination
           count={+pageTotalCount}
           color="warning"

@@ -52,8 +52,7 @@ const TicketCard = ({ item }) => {
         <div className="card__up__buyticket">
           <Button
             variant="contained"
-            onClick={() => navigate(`/details/${item.id}`)}
-          >
+            onClick={() => navigate(`/details/${item.id}`)}>
             Купить билеты
           </Button>
         </div>

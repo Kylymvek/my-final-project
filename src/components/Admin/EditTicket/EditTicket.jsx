@@ -48,7 +48,7 @@ const EditTicket = () => {
       return;
     }
     editTicket(id, inpValues);
-    navigate("/list");
+    navigate("/");
   }
 
   return (

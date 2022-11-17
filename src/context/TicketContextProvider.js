@@ -29,7 +29,7 @@ function reducer(prevState, action) {
       return {
         ...prevState,
         tickets: action.payload.data,
-        pageTotalCount: Math.ceil(action.payload.headers["x-total-count"] / 3),
+        pageTotalCount: Math.ceil(action.payload.headers["x-total-count"] / 4),
       };
     case "GET_ONE_TICKET":
       return { ...prevState, ticketDetails: action.payload };
