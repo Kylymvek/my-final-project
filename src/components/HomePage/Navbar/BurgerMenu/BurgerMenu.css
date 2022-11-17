@@ -1,0 +1,50 @@
+.showBurgerMenu__nav {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(71, 71, 71);
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+}
+
+.showBurgerMenu__main {
+  padding: 50px;
+}
+
+.showBurgerMenu__main p {
+  margin: 20px;
+}
+
+.showBurgerMenu__nav__btn {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.showBurgerMenu__nav__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20px;
+  background-color: black;
+  height: 2px;
+}
+
+.showBurgerMenu__nav__btn span {
+  position: absolute;
+  top: 9px;
+  width: 20px;
+  background-color: black;
+  height: 2px;
+}
+
+.showBurgerMenu__nav__btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  background-color: black;
+  height: 2px;
+}

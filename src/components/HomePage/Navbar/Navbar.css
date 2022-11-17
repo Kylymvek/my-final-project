@@ -1,4 +1,4 @@
-nav {
+.nav__burgerMenu {
   height: 70px;
   background-color: rgb(245 245 229 / 86%);
   padding: 0 18px;
@@ -125,6 +125,7 @@ nav {
   .burgerMenu {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .navbar__center {

@@ -10,8 +10,20 @@ import "./Navbar.css";
 import { basketContext } from "../../../context/BasketContextProvider";
 import { ticketContext } from "../../../context/TicketContextProvider";
 import { useAuth } from "../../../context/AuthContextProvider";
+import Menu from "./Menu/Menu";
 
 const Navbar = () => {
+  const items = [
+    { value: "Добавить билеты", href: "/add" },
+    { value: "Билеты", href: "/" },
+    { value: "RM Shop", href: "/" },
+    { value: "О клубе", href: "/" },
+    { value: "Стадион Бернабеу", href: "/" },
+    { value: "Партнеры", href: "/" },
+  ];
+
+  const [menuActive, setMenuActive] = useState(false);
+
   const [showSearch, setShowSearch] = useState(false);
   const navigate = useNavigate();
   const { readTicket, pageTotalCount } = useContext(ticketContext);
@@ -21,6 +33,7 @@ const Navbar = () => {
   const [searchValue, setSearchValue] = useState("");
   const [paramsSearch, setParamsSearch] = useSearchParams();
   const location = useLocation();
+
   useEffect(() => {
     if (location.pathname === "/") {
       setParamsSearch({
@@ -43,9 +56,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav>
+      <nav className="nav__burgerMenu">
         <div className="burgerMenu">
-          <MenuIcon fontSize="large" />
+          <MenuIcon
+            fontSize="large"
+            onClick={() => setMenuActive(!menuActive)}
+          />
         </div>
         <div className="navbar__left">
           <div className="left__logo-real">
@@ -66,11 +82,7 @@ const Navbar = () => {
               <br /> билеты
             </li>
           ) : null}
-          <li
-          // onClick={() => navigate("/list")}
-          >
-            Билеты
-          </li>
+          <li>Билеты</li>
           <li>RM Shop</li>
           <li>О клубе</li>
           <li>Стадион Бернабеу</li>
@@ -100,6 +112,12 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <Menu
+        active={menuActive}
+        setActive={setMenuActive}
+        header={"Меню"}
+        items={items}
+      />
       {/* for search */}
       {showSearch ? (
         <div className="container nav-search">
