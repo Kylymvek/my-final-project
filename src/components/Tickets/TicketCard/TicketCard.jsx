@@ -16,19 +16,33 @@ const TicketCard = ({ item }) => {
     <div className="container-ticket-card">
       <div className="card__up">
         <div className="card__up__liga">
-          <img src={item.ligaLogo} alt="liga" />
+          <img
+            src={item.ligaLogo}
+            alt="liga"
+            onClick={() => navigate(`/details/${item.id}`)}
+          />
         </div>
         <div className="card__up__macth">
           <div className="match__firstTeam">
-            <img src={item.firstTeamLogo} alt="first team" />
+            <img
+              src={item.firstTeamLogo}
+              alt="first team"
+              onClick={() => navigate(`/details/${item.id}`)}
+            />
           </div>
           <div className="match__secondTeam">
-            <img src={item.secondTeamLogo} alt="second team" />
+            <img
+              src={item.secondTeamLogo}
+              alt="second team"
+              onClick={() => navigate(`/details/${item.id}`)}
+            />
           </div>
         </div>
         <div className="card__up__nameteam">
           <div className="nameteam__first">
-            <p>{item.firstTeamName}</p>
+            <p onClick={() => navigate(`/details/${item.id}`)}>
+              {item.firstTeamName}
+            </p>
           </div>
           <p style={{ textAlign: "center" }}>-</p>
           <div className="nameteam__second">
@@ -38,7 +52,8 @@ const TicketCard = ({ item }) => {
         <div className="card__up__buyticket">
           <Button
             variant="contained"
-            onClick={() => navigate(`/details/${item.id}`)}>
+            onClick={() => navigate(`/details/${item.id}`)}
+          >
             Купить билеты
           </Button>
         </div>

@@ -18,16 +18,16 @@ const Footer = () => {
           <div className="footer__content__left">
             <h3>Подписывайтесь на нас</h3>
             <ul className="footer__content__left__icons">
-              <li>
+              <li className="firstIcon">
                 <FacebookIcon fontSize="large" />
               </li>
-              <li>
+              <li className="secondIcon">
                 <InstagramIcon fontSize="large" />
               </li>
-              <li>
+              <li className="thirdIcon">
                 <TwitterIcon fontSize="large" />
               </li>
-              <li>
+              <li className="fourthIcon">
                 <YouTubeIcon fontSize="large" />
               </li>
             </ul>

@@ -10,7 +10,9 @@
   justify-content: space-around;
   background-color: #fff;
 }
-
+.container-ticket-card img {
+  cursor: pointer;
+}
 .card__up {
   display: flex;
   justify-content: space-between;
@@ -18,8 +20,8 @@
 }
 
 .card__up__liga img {
-  width: 40px;
-  height: 40px;
+  width: 47px;
+  height: 47px;
 }
 
 .card__up__macth {
@@ -30,8 +32,8 @@
 
 .match__firstTeam img,
 .match__secondTeam img {
-  width: 70px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
 }
 
 .card__up__nameteam {

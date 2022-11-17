@@ -61,40 +61,43 @@ const Authorization = () => {
   // );
 
   return (
-    <div className="login">
-      <h2>Вход через аккаунт</h2>
-      {error && <Alert severity="error">{error}</Alert>}
-      {success && <Alert severity="success">{success}</Alert>}
-      <input
-        name="email"
-        placeholder="Email"
-        type="email"
-        value={email}
-        onChange={e => setEmail(e.target.value)}
-      />
-      <input
-        id="pw"
-        name="password"
-        placeholder="Пароль"
-        type="password"
-        value={password}
-        onChange={e => setPassword(e.target.value)}
-      />
+    <div className="overlayRegister">
+      <div className="login">
+        <h2>Вход через аккаунт</h2>
+        {error && <Alert severity="error">{error}</Alert>}
+        {success && <Alert severity="success">{success}</Alert>}
+        <input
+          name="email"
+          placeholder="Email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          id="pw"
+          name="password"
+          placeholder="Пароль"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
 
-      <Button
-        disabled={loading}
-        onClick={handleInputs}
-        variant="contained"
-        sx={{
-          width: "100%",
-          backgroundColor: "rgb(130, 130, 238)",
-          marginTop: "10px",
-        }}>
-        Войти
-      </Button>
-      <a className="forgot" href="/register">
-        Нет аккаунта? Зарегистрируйся!
-      </a>
+        <Button
+          disabled={loading}
+          onClick={handleInputs}
+          variant="contained"
+          sx={{
+            width: "100%",
+            backgroundColor: "rgb(130, 130, 238)",
+            marginTop: "10px",
+          }}
+        >
+          Войти
+        </Button>
+        <a className="forgot" href="/register">
+          Нет аккаунта? Зарегистрируйся!
+        </a>
+      </div>
     </div>
   );
 };

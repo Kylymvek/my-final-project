@@ -1,6 +1,6 @@
 .footer {
   /* background: url("https://static.vecteezy.com/system/resources/thumbnails/003/106/558/small/soccer-stadium-night-background-free-vector.jpg"); */
-  background-color: #c2c2c2;
+  background-color: rgb(245 245 229);
   padding: 20px;
 }
 
@@ -50,6 +50,22 @@
 
 li {
   list-style-type: none;
+}
+.footer__content__left__icons .firstIcon .css-tzssek-MuiSvgIcon-root:hover {
+  cursor: pointer;
+  fill: rgb(0, 60, 201) !important;
+}
+.footer__content__left__icons .secondIcon .css-tzssek-MuiSvgIcon-root:hover {
+  cursor: pointer;
+  fill: rgb(231, 105, 15) !important;
+}
+.footer__content__left__icons .thirdIcon .css-tzssek-MuiSvgIcon-root:hover {
+  cursor: pointer;
+  fill: rgb(28, 133, 214) !important;
+}
+.footer__content__left__icons .fourthIcon .css-tzssek-MuiSvgIcon-root:hover {
+  cursor: pointer;
+  fill: rgba(214, 28, 28) !important;
 }
 
 @media all and (max-width: 630px) {

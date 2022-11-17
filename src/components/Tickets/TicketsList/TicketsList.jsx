@@ -48,7 +48,7 @@ const TicketsList = () => {
     <>
       <div className="ticket-cards">
         {ticketsArr ? (
-          ticketsArr.map(item => <TicketCard item={item} key={item.id} />)
+          ticketsArr.map((item) => <TicketCard item={item} key={item.id} />)
         ) : (
           <h1 style={{ color: "white" }}>loading...</h1>
         )}
@@ -60,13 +60,17 @@ const TicketsList = () => {
           justifyContent: "center",
         }}
         mx="auto"
-        my="10px">
+        my="10px"
+      >
         <Pagination
           count={+pageTotalCount}
           color="warning"
           page={+page}
           onChange={(e, value) => setPage(value)}
-          style={{ backgroundColor: "rgb(212, 211, 211)" }}
+          style={{
+            backgroundColor: "rgb(245 245 229 / 86%)",
+            borderRadius: "30px",
+          }}
         />
       </Grid>
     </>

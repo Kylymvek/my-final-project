@@ -13,6 +13,7 @@ import {
 } from "@mui/material";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import { basketContext } from "../../context/BasketContextProvider";
+import Navbar from "../HomePage/Navbar/Navbar";
 
 const BasketTicket = () => {
   const { ticketsInBasket, getBasket, changeTicketCount, deleteBasketTicket } =
@@ -23,6 +24,7 @@ const BasketTicket = () => {
   }, []);
   return (
     <>
+      <Navbar />
       <Container maxWidth="lg">
         <Typography variant="h3">My Basket</Typography>
         {ticketsInBasket ? (
@@ -40,7 +42,7 @@ const BasketTicket = () => {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {ticketsInBasket.tickets.map(elem => (
+                  {ticketsInBasket.tickets.map((elem) => (
                     <TableRow key={elem.item.id}>
                       <TableCell>{elem.item.liga}</TableCell>
                       <TableCell>
@@ -64,14 +66,15 @@ const BasketTicket = () => {
                           type="number"
                           style={{ width: "40px" }}
                           value={elem.count}
-                          onChange={e =>
+                          onChange={(e) =>
                             changeTicketCount(elem.item.id, e.target.value)
                           }
                         />
                       </TableCell>
                       <TableCell>{elem.subPrice} €</TableCell>
                       <TableCell
-                        onClick={() => deleteBasketTicket(elem.item.id)}>
+                        onClick={() => deleteBasketTicket(elem.item.id)}
+                      >
                         <DeleteOutlineIcon className="deleteIconBasket" />
                       </TableCell>
                     </TableRow>

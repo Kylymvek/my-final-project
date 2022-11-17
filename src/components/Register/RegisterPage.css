@@ -5,13 +5,13 @@
   align-items: center;
   margin: 100px auto;
 } */
-
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 .login h2 {
-  color: #6d7781;
-  font-family: "Sofia", cursive;
+  color: #805ecc;
+  font-family: "Berkshire Swash";
   font-size: 15px;
-  font-weight: bold;
-  font-size: 3.6em;
+  font-weight: 400;
+  font-size: 2.2em;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -22,16 +22,25 @@ a {
 }
 
 .login {
+  /* width: 350px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-left: -175px; */
   width: 350px;
   position: absolute;
   top: 10%;
   left: 50%;
   margin-left: -175px;
+  padding: 32px;
+  border-radius: 20px;
+  background: #c1c2dc;
+  z-index: 10;
 }
 
 input[type="email"],
 input[type="password"] {
-  width: 350px;
+  width: 100%;
   padding: 20px 0px;
   background: transparent;
   border: 0;
@@ -101,4 +110,15 @@ input[type="submit"]:hover {
 ::-webkit-input-placeholder {
   color: #435160;
   font-size: 12px;
+}
+
+.overlayRegister {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background: #312f2f4f;
+  backdrop-filter: blur(4px);
+  z-index: 1;
 }

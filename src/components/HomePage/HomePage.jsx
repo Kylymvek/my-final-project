@@ -9,14 +9,14 @@ import PalmaresContent from "./PalmaresContent/PalmaresContent";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="homePage">
       <Navbar />
       {/* <TicketDetails /> */}
       <TicketsList />
       {/* <Filter /> */}
       {/* <PalmaresContent /> */}
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -49,7 +49,11 @@ const Navbar = () => {
         </div>
         <div className="navbar__left">
           <div className="left__logo-real">
-            <img src={logoRealMadrid} alt="logo-real" />
+            <img
+              src={logoRealMadrid}
+              alt="logo-real"
+              onClick={() => navigate("/")}
+            />
           </div>
           <div className="left__logo-ucl">
             <img src={logoUcl} alt="logo-ucl" />
@@ -104,11 +108,15 @@ const Navbar = () => {
             inputProps={{ "aria-label": "search" }}
             placeholder="Поиск"
             value={searchValue}
-            onChange={e => setSearchValue(e.target.value)}
+            onChange={(e) => setSearchValue(e.target.value)}
           />
-          <Button variant="contained" sx={{ marginLeft: "5px" }}>
+          <button
+            className="searchBtnNav"
+            variant="contained"
+            sx={{ marginLeft: "5px" }}
+          >
             Поиск
-          </Button>
+          </button>
         </div>
       ) : null}
     </>
